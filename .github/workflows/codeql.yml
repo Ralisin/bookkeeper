@@ -98,4 +98,6 @@ jobs:
       if: steps.check_changes.outputs.docs_only != 'true'
       uses: github/codeql-action/analyze@v3
       with:
-        category: "/language:${{matrix.language}}"
+        category: "/language:${{matrix.language}}"\
+
+    - run: echo "Just a test"
