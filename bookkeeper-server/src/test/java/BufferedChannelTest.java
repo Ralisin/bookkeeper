@@ -29,6 +29,7 @@ public class BufferedChannelTest {
         try {
             BufferedChannel bc = new BufferedChannel(allocator, fc, writeCapacity, readCapacity, unpersistedBytesBound);
         } catch (Exception e) {
+            assertTrue(throwsException);
             if (throwsException) assertEquals(exceptionClass, e.getClass());
             else throw e;
         }
