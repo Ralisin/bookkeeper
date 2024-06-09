@@ -1,4 +1,4 @@
-name: pit
+name: Pit
 on:
   push:
     branches:
