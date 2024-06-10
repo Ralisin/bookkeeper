@@ -498,11 +498,9 @@
               <targetClasses>
                 <param>org.apache.bookkeeper.bookie.BufferedChannel</param>
               </targetClasses>
-              <!-- targetTests>
-                <param>org.apache.bookkeeper.bookie.BufferedChannelWriteTest</param>
-                <param>org.apache.bookkeeper.bookie.BufferedChannelReadTest</param>
-                <param>org.apache.bookkeeper.bookie.BufferedChannelConstructorTest</param>
-              </targetTests-->
+              <targetTests>
+                <param>org.apache.bookkeeper.bookie.BufferedChannelTests.BufferedChannelReadTest</param>
+              </targetTests>
               <avoidCallsTo>
                 <avoidCallsTo>org.slf4j</avoidCallsTo>
               </avoidCallsTo>
