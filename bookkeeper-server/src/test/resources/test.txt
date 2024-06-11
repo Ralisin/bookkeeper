@@ -1,8 +1,1 @@
-src/test/resources/test.txtlo World
-Hello World
-Hello World
-Hello World
-Hello World
-Hello World
-Hello World
 Hello World

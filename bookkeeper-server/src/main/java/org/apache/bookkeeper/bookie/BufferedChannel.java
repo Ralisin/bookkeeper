@@ -41,7 +41,7 @@ public class BufferedChannel extends BufferedReadChannel implements Closeable {
     /**
      * The position of the file channel's write pointer.
      */
-    protected AtomicLong writeBufferStartPosition = new AtomicLong(0);
+    public AtomicLong writeBufferStartPosition = new AtomicLong(0);
     /**
      * The buffer used to write operations.
      */

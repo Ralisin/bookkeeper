@@ -484,6 +484,17 @@
       <build>
         <plugins>
           <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.22.2</version>
+            <configuration>
+              <includes>
+                <include>**/*Test.java</include>
+                <include>**/Test*.java</include>
+              </includes>
+            </configuration>
+          </plugin>
+          <plugin>
             <groupId>org.pitest</groupId>
             <artifactId>pitest-maven</artifactId>
             <version>1.14.0</version>
@@ -499,7 +510,7 @@
                 <param>org.apache.bookkeeper.bookie.BufferedChannel</param>
               </targetClasses>
               <targetTests>
-                <param>org.apache.bookkeeper.bookie.BufferedChannelTests.BufferedChannelReadTest</param>
+                <param>BufferedChannelReadTest</param>
               </targetTests>
               <avoidCallsTo>
                 <avoidCallsTo>org.slf4j</avoidCallsTo>
