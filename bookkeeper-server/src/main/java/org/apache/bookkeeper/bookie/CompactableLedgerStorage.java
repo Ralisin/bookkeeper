@@ -25,7 +25,8 @@ import java.io.IOException;
 /**
  * Interface that identifies LedgerStorage implementations using EntryLogger and running periodic entries compaction.
  */
-public interface CompactableLedgerStorage extends LedgerStorage {
+public interface
+CompactableLedgerStorage extends LedgerStorage {
 
     /**
      * Get an iterator over a range of ledger ids stored in the bookie.
